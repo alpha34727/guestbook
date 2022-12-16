@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}
+    首頁
+{% endblock title %}
+
+{% block body %}
+    <ul>
+        {% for message in message_list %}
+            <li>
+                <a href="{% url 'msg_view' message.id %}">{{ message.subject }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock body %}
