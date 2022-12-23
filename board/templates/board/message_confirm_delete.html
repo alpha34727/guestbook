@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    刪除留言
+{% endblock title %}
+
+{% block body %}
+<h2>刪除留言</h2>
+<p>確定刪除 {{ object }} 嗎？</p>
+
+<form action="", method="post">
+    {% csrf_token %}
+    <input type="submit" value="確定刪除">
+</form>
+{% endblock body %}

@@ -1,0 +1,11 @@
+{% extends "bast.html" %}
+
+{% block title %}
+    已登出
+{% endblock title %}
+
+{% block body %}
+<p>您已登出!!</p>  
+
+<a href="{% url 'login'%}">請按此處重新登入</a>
+{% endblock body %}
