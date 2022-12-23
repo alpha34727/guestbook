@@ -15,4 +15,4 @@ class MessageDetail(DetailView):
 class MessageCreate(CreateView):
     model = Message
     fields = ['user', 'subject', 'content']
-    success_url = reverse_lazy('msg_list')
+    success_url = reverse_lazy('msg_view') #/message/

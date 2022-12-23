@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    首頁
+{% endblock title %}
+
+{% block body %}
+<form action="" method="post">
+  {% csrf_token %}
+  <table>
+    {{ form.as_table }}
+  </table>
+  <input type="submit" value="送出" />
+</form>
+{% endblock body %}
